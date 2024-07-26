@@ -182,7 +182,7 @@ def sqrt_calc(page: ft.Page):
     russian_language_option = ft.dropdown.Option(
         text="Русский " + flag("RU"),
         text_style=ft.TextStyle(
-            height=0.2,
+            height=0.2
         ),
         disabled=False,
         on_click=lambda event_args: choose_language_option(event_args, "ru")
@@ -214,9 +214,7 @@ def sqrt_calc(page: ft.Page):
             bgcolor={ft.ControlState.HOVERED: ft.colors.PINK_ACCENT_100}
         ),
         visible=False,
-        leading=ft.Icon(
-            name=ft.icons.LANGUAGE,
-        ),
+        leading=ft.Icon(name=ft.icons.LANGUAGE),
         content=ft.Dropdown(
             ref=chosen_language,
             value="Русский " + flag("RU"),
@@ -378,9 +376,7 @@ def sqrt_calc(page: ft.Page):
                 ref=num_of_decimal_places,
                 value="3",
                 hint_text="0-5",
-                hint_style=ft.TextStyle(
-                    italic=True
-                ),
+                hint_style=ft.TextStyle(italic=True),
                 text_align=ft.TextAlign.CENTER,
                 width=50,
                 input_filter=ft.NumbersOnlyInputFilter(),
@@ -696,4 +692,4 @@ def sqrt_calc(page: ft.Page):
     # endregion
 
 
-ft.app(target=sqrt_calc)  # ft.app(target=main, view=ft.AppView.WEB_BROWSER)
+ft.app(target=sqrt_calc)
