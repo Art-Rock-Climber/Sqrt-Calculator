@@ -696,4 +696,4 @@ def sqrt_calc(page: ft.Page):
     # endregion
 
 
-ft.app(target=sqrt_calc)  # ft.app(target=main, view=ft.AppView.WEB_BROWSER)
+ft.app(target=sqrt_calc)
